@@ -18,6 +18,9 @@ else:
 print()
 for checker in range (0,10):
     count_digits = pi_string.count(str(checker))
-    print(f"{checker} : Appear {count_digits} times in PI Million Decimal points")
+    if checker !=3:
+        print(f"{checker} : Appear {count_digits} times in PI Million Decimal points")
+    else:
+        print(f"{checker} : Appear {(count_digits - 1)} times in PI Million Decimal points")
 
 
